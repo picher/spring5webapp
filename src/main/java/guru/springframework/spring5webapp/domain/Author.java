@@ -87,4 +87,14 @@ public class Author {
     public int hashCode() {
         return id != null ? id.hashCode() : 0;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Author{");
+        sb.append("id=").append(id);
+        sb.append(", firstName='").append(firstName).append('\'');
+        sb.append(", lastName='").append(lastName).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
